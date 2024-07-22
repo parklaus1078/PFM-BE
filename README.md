@@ -12,10 +12,9 @@ This repository is for a web application, Pet Funeral Map.
    - Github
 
 ## Infrastructure
-- GCP
-   - GCE(Google Compute Engine) : Server instance
-   - GCF(Google Cloud Firestore) : NoSQL Database
-   - GCS(Google Cloud Storage) : unstructured data storage(like S3)
+- AWS
+   - EC2
+   - DynamoDB
  
 ## Goals
 1. Fullstack development of a service
