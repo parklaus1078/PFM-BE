@@ -1,0 +1,36 @@
+[tool.ruff]
+line-length = 88
+
+# Rules to enforce PEP 8 style
+select = [
+    "E",  # Pycodestyle errors
+    "W",  # Pycodestyle warnings
+    "F",  # Pyflakes warnings (e.g., unused imports, undefined names)
+    "C90",  # Complexity (C901 for complexity > 10)
+    "D",  # Docstring conventions (from pydocstyle)
+]
+
+# Ignore certain rules
+ignore = [
+    "E203",  # Whitespace before ':', part of PEP 8 but conflicting with black formatter
+    "W503",  # Line break before binary operator, conflicting with black
+]
+
+# Exclude specific files or directories
+exclude = [
+    "venv",  # Ignore virtual environments
+    "__pycache__",  # Ignore cache files
+    ".mypy_cache",  # Ignore mypy cache
+    "build",  # Ignore build directories
+    "dist",  # Ignore distribution directories
+]
+
+# Settings for specific rules
+[E226]  # Enforce space around arithmetic operators
+allow = true
+
+[E302]  # Require 2 blank lines between top-level definitions
+min_blank_lines = 2
+
+[D]  # Pydocstyle rules for docstrings
+convention = "google"  # Follow Google style docstrings

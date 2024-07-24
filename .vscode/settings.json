@@ -1,0 +1,7 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.ruffPath": "${workspaceFolder}/venv/bin/ruff",  // Replace with the path if not in PATH
+    "python.linting.ruffArgs": ["--config=ruff.toml"],  // Ensures `ruff.toml` is used
+    "editor.formatOnSave": true
+}
